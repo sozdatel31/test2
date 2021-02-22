@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      Здарова отеtttt
+      This is App component
     </div>
   );
 }
