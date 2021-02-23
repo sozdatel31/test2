@@ -1,9 +1,12 @@
 import React from "react";
 
-function Accordion() {
+type AccordionPropsType = {
+ title: string;
+}
+function Accordion(props: AccordionPropsType) {
     console.log("Accordeon rendered");
     return (<div>
-            <AccordionTitle/>
+            <AccordionTitle title={props.title}/>
             <AccordionBody/>
 
 
@@ -12,10 +15,12 @@ function Accordion() {
     );
 
 }
-
-function AccordionTitle() {
+type AccordionTitlePropsType = {
+title: string;
+}
+function AccordionTitle(props: AccordionTitlePropsType) {
     console.log("AccordeonTitle rendered");
-    return <h3>Меню</h3>
+    return <h3>{props.title}</h3>
 };
 
 function AccordionBody() {

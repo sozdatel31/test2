@@ -17,17 +17,26 @@ function App() {
     debugger
     return (
         <div>
+            <PageTitle title={"My friends"}/>
+            <Rating value={0}/>
+            <Rating value={1}/>
+            <Rating value={2}/>
             <Rating value={3}/>
-            <Accordion/>
-            <AppTitle/>
             <Rating value={4}/>
+            <Rating value={5}/>
+            <Accordion title={"Menu"}/>
+            <Accordion title={"Users"}/>
+            <PageTitle title={"This is APP component"}/>
+
         </div>
     );
 }
-
-function AppTitle() {
-    console.log("AppTitle rendered");
-    return (<>This is App component</>);
+type PageTitlePropsType = {
+    title: string;
+}
+function PageTitle(props: PageTitlePropsType) {
+    console.log("PageTitle rendered");
+    return (<h1>{props.title}</h1>);
 }
 
 
