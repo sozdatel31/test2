@@ -14,10 +14,13 @@ function Accordion() {
 }
 
 function AccordionTitle() {
+    console.log("AccordeonTitle rendered");
     return <h3>Меню</h3>
 };
+
 function AccordionBody() {
-    return  <ul>
+    console.log("AccordeonBody rendered");
+    return <ul>
         <li>1</li>
         <li>2</li>
         <li>3</li>
