@@ -24,8 +24,8 @@ function App() {
             <Rating value={3}/>
             <Rating value={4}/>
             <Rating value={5}/>
-            <Accordion title={"Menu"}/>
-            <Accordion title={"Users"}/>
+            <Accordion title={"Menu"} collapse={false}/>
+            <Accordion title={"Users"} collapse={false}/>
             <PageTitle title={"This is APP component"}/>
 
         </div>
