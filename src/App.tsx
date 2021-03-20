@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
 import Accordion from "./components/Accordion/Accordion";
-import {Rating} from "./components/Rating/Rating";
+import {Rating, RatingValueType} from "./components/Rating/Rating";
 import OnOff from "./components/OnOff/OnOff";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import {useState} from 'react'
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
+import UncontrolledOnOff from "./components/UncontrolledOnOff/UncontrolledOnOff";
 /*
 function hello() {
     debugger
@@ -16,24 +17,26 @@ function hello() {
 //hello();
 
 function App() {
+    const [ratingValue, setRatingValue] = useState<RatingValueType>(0)
+    const [accCollapse, setAccCollapse] = useState<boolean>(false)
+    const [power, setPower] = useState(true)
     console.log("App rendered");
     debugger
     return (
         <div>
             <PageTitle title={"My friends"}/>
-            <Rating value={0}/>
-            <Rating value={1}/>
-            <Rating value={2}/>
-            <Rating value={3}/>
-            <Rating value={4}/>
-            <Rating value={5}/>
-            <Accordion title={"Menu"} collapse={true}/>
+            <Rating value={ratingValue} setRatingValue={setRatingValue}/>
+
+            <Accordion title={"Menu"} collapse={accCollapse} setAccCollapse={setAccCollapse}/>
             <UncontrolledRating/>
-            <Accordion title={"Users"} collapse={false}/>
             <PageTitle title={"This is APP component"}/>
-            <OnOff/>
-            <OnOff/>
-<UncontrolledAccordion title={"Zdarova otec"}/>
+            <OnOff power={power} setPower={setPower}/>
+            <OnOff power={power} setPower={setPower}/>
+            <OnOff power={power} setPower={setPower}/>
+            <UncontrolledOnOff/>
+            <UncontrolledOnOff/>
+            <UncontrolledOnOff/>
+            <UncontrolledAccordion title={"Zdarova otec"}/>
         </div>
     );
 }
