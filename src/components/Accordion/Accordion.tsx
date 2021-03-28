@@ -6,7 +6,7 @@ type AccordionPropsType = {
     setAccCollapse: (accCollapse: boolean) => void
 }
 
-function Accordion(props: AccordionPropsType) {
+export function Accordion(props: AccordionPropsType) {
     console.log("Accordeon rendered");
     return (<div>
         <AccordionTitle title={props.title} onClick={props.setAccCollapse} collapse={props.collapse}/>
@@ -36,4 +36,3 @@ function AccordionBody() {
     </ul>
 };
 
-export default Accordion;

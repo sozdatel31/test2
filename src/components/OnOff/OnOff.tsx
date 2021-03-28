@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 import s from "./OnOff.module.css"
 
-type OnOffPropsType = {
+export type OnOffPropsType = {
     power: boolean;
     setPower: (power: boolean) => void;
 }
 
-function OnOff(props: OnOffPropsType) {
+export function OnOff(props: OnOffPropsType) {
     const onStyle = {
         border: "solid",
         padding: "5px",
@@ -60,5 +60,3 @@ function Off() {
         <span className={s.LampTwo}>  .....  </span>
     </div>)
 }
-
-export default OnOff;
