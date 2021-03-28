@@ -5,7 +5,7 @@ type OnOffPropsType = {
     // setPower: (power: boolean) => void;
 }
 
-function UncontrolledOnOff(props: OnOffPropsType) {
+export function UncontrolledOnOff(props: OnOffPropsType) {
     const [power, setPower] = useState(true)
     const onStyle = {
         border: "solid",
@@ -42,5 +42,3 @@ function UncontrolledOnOff(props: OnOffPropsType) {
 
 }
 
-
-export default UncontrolledOnOff;

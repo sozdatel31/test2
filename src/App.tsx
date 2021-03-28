@@ -6,7 +6,7 @@ import {OnOff} from "./components/OnOff/OnOff";
 import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import {useState} from 'react'
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
-import UncontrolledOnOff from "./components/UncontrolledOnOff/UncontrolledOnOff";
+import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
 /*
 function hello() {
     debugger
