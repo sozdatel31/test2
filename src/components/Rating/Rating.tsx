@@ -4,7 +4,7 @@ export type RatingValueType = 0 | 1 | 2 | 3 | 4 | 5;
 
 type RatingPropsType = {
     setRatingValue: (ratingValue: RatingValueType) => void
-    value: 0 | 1 | 2 | 3 | 4 | 5;
+    value: RatingValueType;
 }
 
 export function Rating(props: RatingPropsType) {

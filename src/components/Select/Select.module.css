@@ -1,0 +1,19 @@
+.selectedItem {
+    font-weight: bolder;
+}
+.select {
+    position: absolute;
+
+    border: 1px solid black;
+}
+
+.selectItems {
+    position: absolute;
+    border: 1px solid black;
+
+}
+
+.item.selected{
+    background-color: chartreuse;
+    color:white;
+}
